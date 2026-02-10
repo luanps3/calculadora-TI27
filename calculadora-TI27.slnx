@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="calculadora-TI27.Core/calculadora-TI27.Core.csproj" />
+  <Project Path="calculadora-TI27/calculadora-TI27.UI.csproj" />
+</Solution>
