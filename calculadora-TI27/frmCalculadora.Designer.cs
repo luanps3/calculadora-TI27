@@ -37,9 +37,9 @@
             btn5 = new Button();
             btn6 = new Button();
             btnMultiplicar = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            btn1 = new Button();
+            btn2 = new Button();
+            btn3 = new Button();
             btnSubtrair = new Button();
             btnLimpar = new Button();
             btn0 = new Button();
@@ -81,6 +81,7 @@
             btn8.TabIndex = 1;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = false;
+            btn8.Click += BtnNumero_Click;
             // 
             // btn9
             // 
@@ -92,6 +93,7 @@
             btn9.TabIndex = 1;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = false;
+            btn9.Click += BtnNumero_Click;
             // 
             // btnDividir
             // 
@@ -103,6 +105,7 @@
             btnDividir.TabIndex = 1;
             btnDividir.Text = "÷";
             btnDividir.UseVisualStyleBackColor = false;
+            btnDividir.Click += btnDividir_Click;
             // 
             // btn4
             // 
@@ -114,6 +117,7 @@
             btn4.TabIndex = 1;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = false;
+            btn4.Click += BtnNumero_Click;
             // 
             // btn5
             // 
@@ -125,6 +129,7 @@
             btn5.TabIndex = 1;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = false;
+            btn5.Click += BtnNumero_Click;
             // 
             // btn6
             // 
@@ -136,6 +141,7 @@
             btn6.TabIndex = 1;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = false;
+            btn6.Click += BtnNumero_Click;
             // 
             // btnMultiplicar
             // 
@@ -147,39 +153,43 @@
             btnMultiplicar.TabIndex = 1;
             btnMultiplicar.Text = "x";
             btnMultiplicar.UseVisualStyleBackColor = false;
+            btnMultiplicar.Click += btnMultiplicar_Click;
             // 
-            // button6
+            // btn1
             // 
-            button6.BackColor = SystemColors.ControlDark;
-            button6.Font = new Font("Segoe UI", 20F);
-            button6.Location = new Point(12, 227);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 75);
-            button6.TabIndex = 1;
-            button6.Text = "1";
-            button6.UseVisualStyleBackColor = false;
+            btn1.BackColor = SystemColors.ControlDark;
+            btn1.Font = new Font("Segoe UI", 20F);
+            btn1.Location = new Point(12, 227);
+            btn1.Name = "btn1";
+            btn1.Size = new Size(75, 75);
+            btn1.TabIndex = 1;
+            btn1.Text = "1";
+            btn1.UseVisualStyleBackColor = false;
+            btn1.Click += BtnNumero_Click;
             // 
-            // button7
+            // btn2
             // 
-            button7.BackColor = SystemColors.ControlDark;
-            button7.Font = new Font("Segoe UI", 20F);
-            button7.Location = new Point(93, 227);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 75);
-            button7.TabIndex = 1;
-            button7.Text = "8";
-            button7.UseVisualStyleBackColor = false;
+            btn2.BackColor = SystemColors.ControlDark;
+            btn2.Font = new Font("Segoe UI", 20F);
+            btn2.Location = new Point(93, 227);
+            btn2.Name = "btn2";
+            btn2.Size = new Size(75, 75);
+            btn2.TabIndex = 1;
+            btn2.Text = "2";
+            btn2.UseVisualStyleBackColor = false;
+            btn2.Click += BtnNumero_Click;
             // 
-            // button8
+            // btn3
             // 
-            button8.BackColor = SystemColors.ControlDark;
-            button8.Font = new Font("Segoe UI", 20F);
-            button8.Location = new Point(174, 227);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 75);
-            button8.TabIndex = 1;
-            button8.Text = "9";
-            button8.UseVisualStyleBackColor = false;
+            btn3.BackColor = SystemColors.ControlDark;
+            btn3.Font = new Font("Segoe UI", 20F);
+            btn3.Location = new Point(174, 227);
+            btn3.Name = "btn3";
+            btn3.Size = new Size(75, 75);
+            btn3.TabIndex = 1;
+            btn3.Text = "3";
+            btn3.UseVisualStyleBackColor = false;
+            btn3.Click += BtnNumero_Click;
             // 
             // btnSubtrair
             // 
@@ -191,6 +201,7 @@
             btnSubtrair.TabIndex = 1;
             btnSubtrair.Text = "-";
             btnSubtrair.UseVisualStyleBackColor = false;
+            btnSubtrair.Click += btnSubtrair_Click;
             // 
             // btnLimpar
             // 
@@ -203,6 +214,7 @@
             btnLimpar.TabIndex = 1;
             btnLimpar.Text = "C";
             btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
             // 
             // btn0
             // 
@@ -214,6 +226,7 @@
             btn0.TabIndex = 1;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = false;
+            btn0.Click += BtnNumero_Click;
             // 
             // btnIgual
             // 
@@ -225,6 +238,7 @@
             btnIgual.TabIndex = 1;
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = false;
+            btnIgual.Click += btnIgual_Click;
             // 
             // btnSomar
             // 
@@ -236,6 +250,7 @@
             btnSomar.TabIndex = 1;
             btnSomar.Text = "+";
             btnSomar.UseVisualStyleBackColor = false;
+            btnSomar.Click += btnSomar_Click;
             // 
             // frmCalculadora
             // 
@@ -249,12 +264,12 @@
             Controls.Add(btnDividir);
             Controls.Add(btnIgual);
             Controls.Add(btn0);
-            Controls.Add(button8);
-            Controls.Add(button7);
+            Controls.Add(btn3);
+            Controls.Add(btn2);
             Controls.Add(btn6);
             Controls.Add(btnLimpar);
             Controls.Add(btn5);
-            Controls.Add(button6);
+            Controls.Add(btn1);
             Controls.Add(btn9);
             Controls.Add(btn4);
             Controls.Add(btn8);
@@ -277,9 +292,9 @@
         private Button btn5;
         private Button btn6;
         private Button btnMultiplicar;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button btn1;
+        private Button btn2;
+        private Button btn3;
         private Button btnSubtrair;
         private Button btnLimpar;
         private Button btn0;
